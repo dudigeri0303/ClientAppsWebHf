@@ -1,0 +1,11 @@
+button {
+  border: hidden;
+  text-align: left;
+  background-color: transparent;
+}
+
+button:hover {
+  background-color: #3B71CA;
+  color: white;
+}
+

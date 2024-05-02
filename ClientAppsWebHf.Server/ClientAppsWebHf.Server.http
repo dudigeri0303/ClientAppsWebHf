@@ -1,0 +1,6 @@
+@ClientAppsWebHf.Server_HostAddress = http://localhost:5007
+
+GET {{ClientAppsWebHf.Server_HostAddress}}/ClientAppsHf/
+Accept: application/json
+
+###

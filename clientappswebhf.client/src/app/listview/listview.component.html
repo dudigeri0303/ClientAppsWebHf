@@ -1,0 +1,28 @@
+<body class="minimalist-background">
+  <div class="class2">
+    <p>Video Games</p>
+  </div>
+
+  <div>
+    <label class="form-check-label" for="flexSwitchCheckDefault">Switch view</label>
+  </div>
+  <div class="form-check form-switch alignmiddle">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" [(ngModel)]="viewType">
+  </div>
+
+  <div *ngIf="!viewType">
+    <app-videogamelistview *ngFor="let d of videoGamesListView"
+                           [id]="d.id"
+                           [name]="d.title">
+    </app-videogamelistview>
+  </div>
+
+  <div *ngIf="viewType">
+    <app-videogamecarview *ngFor="let d of videoGamesCardView"
+                          [id]="d.id"
+                          [name]="d.title"
+                          [rating]="d.rating">
+    </app-videogamecarview>
+  </div>
+
+</body>

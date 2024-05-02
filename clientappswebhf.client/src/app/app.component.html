@@ -1,0 +1,24 @@
+<ul ngbNav #nav="ngbNav" [activeId]="1" class="nav-tabs justify-content-center">
+  <li [ngbNavItem]="1">
+    <button ngbNavLink (click)="goToListView()">List View</button>
+    <ng-template ngbNavContent>
+      <p>
+      </p>
+    </ng-template>
+  </li>
+  <li [ngbNavItem]="2">
+    <button ngbNavLink (click)="goToCreateForm()"><b>Add Videogame</b></button>
+    <ng-template ngbNavContent>
+      <p>
+      </p>
+    </ng-template>
+  </li>
+</ul>
+<div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+<!-- rendereli a routingolt oldal html-ét-->
+<router-outlet></router-outlet>
+
+
+
+

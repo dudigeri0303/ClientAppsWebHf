@@ -1,0 +1,5 @@
+/* You can add global styles to this file, and also import other style files */
+.minimalist-background {
+  text-align: center;
+  background:repeating-linear-gradient(to right, #27bcad , #ffffff); /* Example gradient */
+}

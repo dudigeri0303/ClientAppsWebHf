@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientAppsWebHf.Server", "ClientAppsWebHf.Server\ClientAppsWebHf.Server.csproj", "{29496BC3-E3F1-4CF8-87A6-AFC9FE28D6F4}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "clientappswebhf.client", "clientappswebhf.client\clientappswebhf.client.esproj", "{E8BD9CF6-9B4C-4566-9F2E-9761436C75C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29496BC3-E3F1-4CF8-87A6-AFC9FE28D6F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29496BC3-E3F1-4CF8-87A6-AFC9FE28D6F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29496BC3-E3F1-4CF8-87A6-AFC9FE28D6F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29496BC3-E3F1-4CF8-87A6-AFC9FE28D6F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8BD9CF6-9B4C-4566-9F2E-9761436C75C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8BD9CF6-9B4C-4566-9F2E-9761436C75C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8BD9CF6-9B4C-4566-9F2E-9761436C75C1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E8BD9CF6-9B4C-4566-9F2E-9761436C75C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8BD9CF6-9B4C-4566-9F2E-9761436C75C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8BD9CF6-9B4C-4566-9F2E-9761436C75C1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC5643F3-4571-434E-8D43-2F6651DA64AE}
+	EndGlobalSection
+EndGlobal

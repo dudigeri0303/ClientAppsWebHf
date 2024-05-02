@@ -1,0 +1,15 @@
+<body class="minimalist-background">
+  <div *ngIf="videoGame">
+    <app-videogame [id]="videoGame?.id"
+                   [name]="videoGame?.title"
+                   [date]="videoGame?.releaseDate"
+                   [studioName]="videoGame?.studioName"
+                   [rateing]="videoGame?.rating"
+                   [image]="videoGame?.image">
+    </app-videogame>
+  </div>
+  <div>
+    <button class="btn btn-primary" (click)="goToEditForm(videoGame.id)">Edit</button>
+    <button class="btn btn-primary" (click)="openDeleteModalWindow()">Delete</button>
+  </div>
+</body>

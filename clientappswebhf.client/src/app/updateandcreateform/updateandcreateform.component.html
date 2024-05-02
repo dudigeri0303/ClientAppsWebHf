@@ -1,0 +1,44 @@
+<div>
+  <form [formGroup]="gameForm" (ngSubmit)="componentId==='_' ? createNewVideogame() : updateVideoGame()">
+    <ng-container formGroupName="mainGroup">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Title</label>
+        <input type="text" class="form-control" formControlName="title" id="title" aria-describedby="emailHelp" [placeholder]="componentId==='_'? 'Enter the title of the game' : (videoGame.title)">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Studio Name</label>
+        <input type="text" class="form-control" formControlName="studioName" id="studioName" aria-describedby="emailHelp" [placeholder]="componentId==='_'? 'Enter the studio name' : (videoGame.studioName)">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputRating">Rating</label>
+        <select id="inputRating" class="form-control" formControlName="rating">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Select a Date</label>
+        <input class="form-control" [placeholder]="componentId==='_'? 'dd-mm-yyyy' : (videoGame.releaseDate)" name="dp" ngbDatepicker #dp="ngbDatepicker"
+               (click)="dp.toggle()" [(ngModel)]="dateModel" (ngModelChange)="onDateSelect()" [ngModelOptions]="{standalone: true}">
+        <button class="btn btn-outline-secondary" (click)="dp.toggle()" type="button">
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+        </button>
+      </div>
+    </ng-container>
+    <ng-container formGroupName="imageGroup">
+      <div class="mb-3 form-group">
+        <label for="formFile" class="form-label">Image (.jpeg file)</label>
+        <input class="form-control" type="file" id="formFile" formControlName="videoGameImage" (change)="onSelectFile($event)">
+      </div>
+    </ng-container>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
