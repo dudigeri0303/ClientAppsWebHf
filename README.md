@@ -9,28 +9,15 @@ Before running the project, ensure you have the following:
 - Microsoft LocalDB installed
 
 ## How to Run the Project
-
-1. **Navigate to the Client Folder**: 
-
-cd your-repository/clients
-
-markdown
-
-
-2. **Install Dependencies**: 
-
-npm install
-
-markdown
-
-
-3. **Update Database**: 
+1. **Install Dependencies**:
+   -Navigate to the Client Folder
+ ```
+ npm install
+ ```
+2. **Update Database**: 
 - Open the Package Manager Console in Visual Studio.
 - Execute the following command to generate the database tables:
   ```
   Update-Database
   ```
-
-4. **Run the Application**: 
-- Start the ASP.NET Core backend.
-- Navigate to the client folder and run the Angular frontend.
+3. **Run the Application**: 
