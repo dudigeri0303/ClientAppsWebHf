@@ -12,12 +12,12 @@ Before running the project, ensure you have the following:
 1. **Install Dependencies**:
    -Navigate to the Client Folder
  ```
- npm install
+npm install
  ```
 2. **Update Database**: 
 - Open the Package Manager Console in Visual Studio.
 - Execute the following command to generate the database tables:
 ```
-  Update-Database
+Update-Database
 ```
 3. **Run the Application**: 
